@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>ASSIGNMENT-1</title>
+    <style>
+    *{
+        margin: 0 auto;
+        padding: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: italic;
+
+        }
+    body{
+        width: auto;
+        height: 1100px;
+        border-top: 10px solid rgb(7, 5, 4);
+        border-left:  10px dashed black ;
+        border-right: 10px dashed rgb(2, 4, 5) ; 
+        border-bottom: 10px solid rgb(7, 5, 4);
+        background: #e1d1d6 url(images/body.png) repeat-x top;
+        
+    }
+    #wrapper {
+	width: 990px;
+	margin: 0 auto;
+}
+
+/* menu */
+
+#menu {
+	clear: both;
+	width: 970px;	
+	height: 90px;
+	padding: 0 10px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu ul li {
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+
+#menu ul li a {
+	float: left;
+	display: block;
+	height: 70px;
+	width: 120px;
+	padding: 20px 0 0 20px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #ffffff;	
+	font-weight: normal;
+	outline: none;	
+	background: url(images/menu_divider.png) center left no-repeat;
+}
+
+#menu ul li a  {
+	display: block;
+	color: #b56076;
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+#menu li a:hover , #menu li .current span {
+	color: #ffffff;
+}
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+.container img{
+ width: 500px;
+ height: 400px;
+ margin-left:-130px ;
+ border: 3px solid white;
+ box-sizing: border-box;
+ transition: all 0.2s ease-in;
+}
+.container img:hover{
+    transform: scale(1.4) rotate(5deg);
+    box-shadow: 0px 0px 20px black;
+}
+    
+    </style>
+</head>
+<body bgcolor="grey">
+ <div id="wrapper">
+    <div id="menu">
+      <ul>
+        <li><a href="#" >Home</a></li>
+        <li><a href="#">Fruits</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      </div>
+    </div>
+    <br>
+    <div id="header_bar">
+        <div id="header">
+        
+          <h1><a href="#"> <img src="images/logo.png" alt="" /> </a></h1>
+          
+        </div>
+    </div>
+    <br>
+  
+    <div class="container">
+        
+        <img class="img" src="https://images.everydayhealth.com/images/ordinary-fruits-with-amazing-health-benefits-05-1440x810.jpg" alt="">
+        <img class="img" src="https://media.istockphoto.com/id/1376009849/photo/mango-fruit-on-tree-with-farm-background.jpg?s=612x612&w=0&k=20&c=k99i2_W74W8ueqE1S9-nnXdJR24adzZtoHe1A4stoHM=" alt="">
+       <br>
+        <img class="img" src="https://static-bebeautiful-in.unileverservices.com/fruits-forglowing-skin_3_0.jpg" alt="">
+        <img class="img" src="https://img.freepik.com/free-photo/close-up-delicious-apples_23-2150713320.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696982400&semt=ais" alt="">
+    
+      
+    </div>
+</body>
+</html>
